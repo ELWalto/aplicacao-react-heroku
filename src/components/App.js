@@ -149,10 +149,10 @@ export  default function TituloFilmes() {
                 <img src={f.imagemUrl} alt={f.nome} />
                 <p>{f.sinopse}</p>
                 <button type='button'  onClick={() => handleDelete(indice)} > Excluir </button>
-                <a href='.titulo'><button type='button' onClick={()=>{
+                <button type='button' onClick={()=>{
                   setEditando(true);
                   setindiceEditando(indice)
-                }}> Editar </button></a>
+                }}> Editar </button>
               </li>
             ))}
           </ul>
